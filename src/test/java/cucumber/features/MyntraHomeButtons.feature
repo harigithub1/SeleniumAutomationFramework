@@ -1,8 +1,7 @@
-@Local1
+@MyntraFeature
 Feature: Myntra Home page buttons
 
-  @MobileLocal
-    @OnlineCloud
+  @MyntraScenario
   Scenario Outline: Validate home page buttons.
     Given User is on home page
     When User clicks on Categories One

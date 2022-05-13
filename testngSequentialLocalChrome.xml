@@ -11,7 +11,7 @@
         <parameter name="password" value="password@123"/>
         <parameter name="OnlineOrMobile" value="LocalBrowser"/>
         <classes>
-            <class name="cucumber.tests.TestNGParallelRunner1Online"/>
+            <class name="cucumber.tests.TestNGSequentialRunnerOnline"/>
         </classes>
     </test>
 </suite>

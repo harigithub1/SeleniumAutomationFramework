@@ -32,7 +32,7 @@
     </build>
     <profiles>
         <profile>
-            <id>MobileLocalParallel</id>
+            <id>testngParallelCloudAndroidAndroid</id>
             <build>
                 <plugins>
                     <plugin>
@@ -41,7 +41,7 @@
                         <version>2.22.2</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testngMobileLocalParallel.xml</suiteXmlFile>
+                                <suiteXmlFile>testngParallelCloudAndroidAndroid.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -49,7 +49,7 @@
             </build>
         </profile>
         <profile>
-            <id>MobileLocalSequential</id>
+            <id>testngParallelCloudChromeChrome</id>
             <build>
                 <plugins>
                     <plugin>
@@ -58,7 +58,7 @@
                         <version>2.22.2</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testngMobileLocalSequential.xml</suiteXmlFile>
+                                <suiteXmlFile>testngParallelCloudChromeChrome.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -66,7 +66,7 @@
             </build>
         </profile>
         <profile>
-            <id>MobileCloudParallel</id>
+            <id>testngParallelCloudIosIos</id>
             <build>
                 <plugins>
                     <plugin>
@@ -75,7 +75,7 @@
                         <version>2.22.2</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testngMobileCloudParallel.xml</suiteXmlFile>
+                                <suiteXmlFile>testngParallelCloudIosIos.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -83,7 +83,7 @@
             </build>
         </profile>
         <profile>
-            <id>MobileCloudSequential</id>
+            <id>testngParallelLocalAndroidAndroid</id>
             <build>
                 <plugins>
                     <plugin>
@@ -92,7 +92,7 @@
                         <version>2.22.2</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testngMobileCloudSequential.xml</suiteXmlFile>
+                                <suiteXmlFile>testngParallelLocalAndroidAndroid.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -100,7 +100,7 @@
             </build>
         </profile>
         <profile>
-            <id>OnlineCloudParallel</id>
+            <id>testngParallelLocalChromeChrome</id>
             <build>
                 <plugins>
                     <plugin>
@@ -109,7 +109,7 @@
                         <version>2.22.2</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testngOnlineCloudParallel.xml</suiteXmlFile>
+                                <suiteXmlFile>testngParallelLocalChromeChrome.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
@@ -134,7 +134,7 @@
             </build>
         </profile>
         <profile>
-            <id>IosAndroidChromeCloudParallel</id>
+            <id>testngIosAndroidChromeCloudParallel</id>
             <build>
                 <plugins>
                     <plugin>
@@ -151,7 +151,7 @@
             </build>
         </profile>
         <profile>
-            <id>AndroidChromeLocalParallel</id>
+            <id>testngAndroidChromeLocalParallel</id>
             <build>
                 <plugins>
                     <plugin>

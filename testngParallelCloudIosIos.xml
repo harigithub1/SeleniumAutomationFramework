@@ -14,11 +14,11 @@
             <class name="cucumber.tests.TestNGParallelRunner1Mobile"/>
         </classes>
     </test>
-    <test name="BrowserStack Google Pixel 5">
+    <test name="BrowserStack iPhone 13 Pro 2">
         <parameter name="Cloud" value="true"/>
-        <parameter name="deviceName" value="Google Pixel 5"/>
-        <parameter name="platform" value="android"/>
-        <parameter name="platformVersion" value="11.0"/>
+        <parameter name="deviceName" value="iPhone 13 Pro"/>
+        <parameter name="platform" value="ios"/>
+        <parameter name="platformVersion" value="15"/>
         <parameter name="username" value="abc@gmail.com"/>
         <parameter name="password" value="password@123"/>
         <parameter name="OnlineOrMobile" value="Mobile"/>

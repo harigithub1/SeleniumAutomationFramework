@@ -18,7 +18,7 @@ import java.net.URL;
 
 @CucumberOptions(
         monochrome = true,
-        tags = "@MobileLocal",
+        tags = "@MyntraScenario",
         features = "src/test/java/cucumber/features",
         glue = "cucumber.stepdefinitions",
         publish = false,

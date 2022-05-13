@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Test-Suite" parallel="tests" thread-count="5">
+    <test name="BrowserStack Google Pixel 5">
+        <parameter name="Cloud" value="true"/>
+        <parameter name="deviceName" value="Google Pixel 5"/>
+        <parameter name="platform" value="android"/>
+        <parameter name="platformVersion" value="11.0"/>
+        <parameter name="username" value="abc@gmail.com"/>
+        <parameter name="password" value="password@123"/>
+        <parameter name="OnlineOrMobile" value="Mobile"/>
+        <classes>
+            <class name="cucumber.tests.TestNGParallelRunner1Mobile"/>
+        </classes>
+    </test>
+    <test name="BrowserStack Google Pixel 5 2">
+        <parameter name="Cloud" value="true"/>
+        <parameter name="deviceName" value="Google Pixel 5"/>
+        <parameter name="platform" value="android"/>
+        <parameter name="platformVersion" value="11.0"/>
+        <parameter name="username" value="abc@gmail.com"/>
+        <parameter name="password" value="password@123"/>
+        <parameter name="OnlineOrMobile" value="Mobile"/>
+        <classes>
+            <class name="cucumber.tests.TestNGParallelRunner2Mobile"/>
+        </classes>
+    </test>
+<!--    <test name="BrowserStack Samsung Galaxy S21">
+        <parameter name="Cloud" value="true"/>
+        <parameter name="deviceName" value="Samsung Galaxy S21"/>
+        <parameter name="platform" value="android"/>
+        <parameter name="platformVersion" value="11"/>
+        <parameter name="username" value="abc@gmail.com"/>
+        <parameter name="password" value="password@123"/>
+        <classes>
+            <class name="cucumber.tests.TestNGParallelRunner2Mobile"/>
+        </classes>
+    </test>
+    <test name="BrowserStack iPhone 13">
+        <parameter name="Cloud" value="true"/>
+        <parameter name="deviceName" value="iPhone 13"/>
+        <parameter name="platform" value="ios"/>
+        <parameter name="platformVersion" value="15"/>
+        <parameter name="username" value="abc@gmail.com"/>
+        <parameter name="password" value="password@123"/>
+        <classes>
+            <class name="cucumber.tests.TestNGParallelRunner1Mobile"/>
+        </classes>
+    </test>
+    <test name="BrowserStack Google Pixel 3 XL">
+        <parameter name="Cloud" value="true"/>
+        <parameter name="deviceName" value="Google Pixel 3 XL"/>
+        <parameter name="platform" value="android"/>
+        <parameter name="platformVersion" value="9.0"/>
+        <parameter name="username" value="abc@gmail.com"/>
+        <parameter name="password" value="password@123"/>
+        <classes>
+            <class name="cucumber.tests.TestNGParallelRunner1Mobile"/>
+        </classes>
+    </test>-->
+</suite>
