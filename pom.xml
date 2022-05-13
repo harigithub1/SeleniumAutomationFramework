@@ -134,7 +134,7 @@
             </build>
         </profile>
         <profile>
-            <id>OnlineMobileCloudParallel</id>
+            <id>IosAndroidChromeCloudParallel</id>
             <build>
                 <plugins>
                     <plugin>
@@ -143,29 +143,47 @@
                         <version>2.22.2</version>
                         <configuration>
                             <suiteXmlFiles>
-                                <suiteXmlFile>testngOnlineMobileCloudParallel.xml</suiteXmlFile>
+                                <suiteXmlFile>testngIosAndroidChromeCloudParallel.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>
                 </plugins>
             </build>
-        </profile>        <profile>
-        <id>OnlineLocalParallel</id>
-        <build>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.22.2</version>
-                    <configuration>
-                        <suiteXmlFiles>
-                            <suiteXmlFile>testngOnlineLocalParallel.xml</suiteXmlFile>
-                        </suiteXmlFiles>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </build>
-    </profile>
+        </profile>
+        <profile>
+            <id>AndroidChromeLocalParallel</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.2</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>testngAndroidChromeLocalParallel.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>OnlineLocalParallel</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.22.2</version>
+                        <configuration>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>testngOnlineLocalParallel.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
 
     </profiles>
 

@@ -2,42 +2,40 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Test-Suite" parallel="tests" thread-count="5">
-    <test name="BrowserStack Windows Chrome">
-        <parameter name="Cloud" value="true"/>
+    <test name="Local A71">
+        <parameter name="Cloud" value="false"/>
+        <parameter name="deviceName" value="RZ8NC07WQNP"/>
+        <parameter name="platform" value="android"/>
+        <parameter name="platformVersion" value="11.0"/>
+        <parameter name="username" value="abc@gmail.com"/>
+        <parameter name="password" value="password@123"/>
+        <parameter name="OnlineOrMobile" value="Mobile"/>
+        <classes>
+            <class name="cucumber.tests.TestNGSequentialRunnerMobile"/>
+        </classes>
+    </test>
+    <test name="Local Browser1">
+        <parameter name="Cloud" value="false"/>
         <parameter name="browser" value="Chrome"/>
         <parameter name="platform" value="Windows"/>
         <parameter name="platformVersion" value="11"/>
         <parameter name="username" value="abc@gmail.com"/>
         <parameter name="password" value="password@123"/>
-        <parameter name="OnlineOrMobile" value="Online"/>
+        <parameter name="OnlineOrMobile" value="LocalBrowser"/>
         <classes>
             <class name="cucumber.tests.TestNGParallelRunner1Online"/>
         </classes>
     </test>
-    <test name="BrowserStack Windows Chrome2">
-        <parameter name="Cloud" value="true"/>
+    <test name="Local Browser2">
+        <parameter name="Cloud" value="false"/>
         <parameter name="browser" value="Chrome"/>
         <parameter name="platform" value="Windows"/>
         <parameter name="platformVersion" value="11"/>
         <parameter name="username" value="abc@gmail.com"/>
         <parameter name="password" value="password@123"/>
-        <parameter name="OnlineOrMobile" value="Online"/>
-        <classes>
-            <class name="cucumber.tests.TestNGParallelRunner1Online"/>
-        </classes>
-    </test>
-<!--
-    <test name="BrowserStack Windows Edge">
-        <parameter name="Cloud" value="true"/>
-        <parameter name="browser" value="Edge"/>
-        <parameter name="platform" value="Windows"/>
-        <parameter name="platformVersion" value="11"/>
-        <parameter name="username" value="abc@gmail.com"/>
-        <parameter name="password" value="password@123"/>
-        <parameter name="OnlineOrMobile" value="Online"/>
+        <parameter name="OnlineOrMobile" value="LocalBrowser"/>
         <classes>
             <class name="cucumber.tests.TestNGParallelRunner2Online"/>
         </classes>
     </test>
--->
 </suite>
